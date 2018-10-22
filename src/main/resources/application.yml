@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:33306/springboot?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 15
+      auto-commit: true
+      pool-name: HikariCP
+      connection-test-query: SELECT 1
+mybatis:
+  mapper-locations: classpath*:mybatis/*.xml,mybatis/*/*.xml
