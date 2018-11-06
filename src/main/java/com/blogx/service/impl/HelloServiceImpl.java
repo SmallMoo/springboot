@@ -1,13 +1,11 @@
 package com.blogx.service.impl;
 
-import com.blogx.common.RedisHelper;
 import com.blogx.entity.Hello;
 import com.blogx.mapper.HelloMapper;
 import com.blogx.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.ui.freemarker.SpringTemplateLoader;
 
 /**
  * @author XueYuan.

@@ -18,6 +18,17 @@ spring:
     host: 192.168.99.100
     port: 63799
     database: 8
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    consumer:
+      group-id: kafka
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    template:
+      default-topic: myTop
 
 
 # 参数 http://mp.baomidou.com/guide/config.html#typealiasespackage
